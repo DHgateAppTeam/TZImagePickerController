@@ -231,6 +231,9 @@ static CGFloat itemMargin = 5;
     if (!_models) {
         [self fetchAssetModels];
     }
+    if (!self.isMovingToParentViewController) {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
