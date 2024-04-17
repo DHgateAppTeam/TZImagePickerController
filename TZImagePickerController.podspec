@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "12.0"
   s.source       = { :git => "https://github.com/banchichen/TZImagePickerController.git", :tag => "3.8.5" }
   s.requires_arc = true
+  s.resource_bundles = {'TZImagePickerController' => ['TZImagePickerController/PrivacyInfo.xcprivacy']}
   
   s.subspec 'Basic' do |b|
     b.resources    = "TZImagePickerController/TZImagePickerController/*.{png,bundle}"
