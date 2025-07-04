@@ -239,7 +239,7 @@ static CGFloat itemMargin = 5;
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.isFirstAppear = NO;
-    // [self updateCachedAssets]; 
+    // [self updateCachedAssets];
 }
 
 - (void)configBottomToolBar {
